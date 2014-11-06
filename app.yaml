@@ -5,5 +5,7 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.*
-  script: helloworld.application
+- url: /2_2
+  script: sign_up.application
+- url: /2_1
+  script: rot13.application
