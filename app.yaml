@@ -5,7 +5,11 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /2_2
-  script: sign_up.application
-- url: /2_1
-  script: rot13.application
+- url: /rot13
+  script: rot13.py
+
+- url: /sign_up
+  script: sign_up.py
+
+- url: /.*
+  script: rot13.py

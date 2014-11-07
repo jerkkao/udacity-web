@@ -50,4 +50,5 @@ class MainPage(webapp2.RequestHandler):
 
 application = webapp2.WSGIApplication([
     ('/', MainPage),
+    ('/rot13/', MainPage),
 ], debug=True)
